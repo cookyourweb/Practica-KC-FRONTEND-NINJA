@@ -1,0 +1,35 @@
+{
+  "name": "practica-final-frontend-ninja-kc",
+  "version": "1.0.0",
+  "description": "***\r ![Keepcoding](https://d2vvqscadf4c1f.cloudfront.net/078jf4zQNCjF2CsMPMmR_128x.png)",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^7.3.0",
+    "bootstrap-sass": "^3.3.7",
+    "browser-sync": "^2.18.13",
+    "browserify": "^14.4.0",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-buffer": "0.0.2",
+    "gulp-notify": "^3.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-tap": "^1.0.1",
+    "gulp-uglify": "^3.0.0",
+    "node-sass": "^4.5.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cookyourweb/Practica-KC-FRONTEND-NINJA.git"
+  },
+  "author": "veronica serna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cookyourweb/Practica-KC-FRONTEND-NINJA/issues"
+  },
+  "homepage": "https://github.com/cookyourweb/Practica-KC-FRONTEND-NINJA#readme"
+}
