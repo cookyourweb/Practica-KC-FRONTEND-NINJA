@@ -1,7 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    @import "head.html"
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.offcanvas.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.17.1.css">
+    <title>Wordplease - tu Wordpress a pequeña escala</title>
+    <link rel="stylesheet" type="text/css" href="dist/css/main.css">
 </head>
 <body class="body-offcanvas">
     <header id="page-header" class="header">
@@ -56,14 +63,28 @@
             </div>
         </nav>
     </header>
-    <main>
-    <div id="qunit"></div>
-    <div id="qunit-fixture"></div>
-    @import "footer.html"
-    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="../dist/js/bootstrap.offcanvas.js"></script>
+<main> 
 
-    <script src="vendor/qunit.js"></script>
-    <script src="test.js"></script>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, assumenda perferendis explicabo corporis placeat illum veniam adipisci quos asperiores qui aut voluptatibus laborum dicta fugiat sit vero beatae excepturi atque.</p>
+</main>
+
+ <footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <p>Wordplease @ All rights reserved</p>
+            </div>
+            <div class="col-xs-12 text-center">
+                <a href="#page-header" class="btn btn-default go-up" title="Go to page's top">
+                    <span class="fa fa-arrow-up"></span>
+                    Go to top
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="dist/js/app.js"></script>
 </body>
 </html>
