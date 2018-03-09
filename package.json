@@ -4,6 +4,7 @@
   "description": "***\r ![Keepcoding](https://d2vvqscadf4c1f.cloudfront.net/078jf4zQNCjF2CsMPMmR_128x.png)",
   "main": "gulpfile.js",
   "dependencies": {
+    "gulp-htmlmin": "^4.0.0",
     "jquery": "^3.1.0",
     "moment": "^2.15.1",
     "node-font-awesome": "^1.0.2"
@@ -19,6 +20,7 @@
     "gulp-autoprefixer": "^3.1.1",
     "gulp-buffer": "0.0.2",
     "gulp-cssnano": "^2.1.2",
+    "gulp-html-import": "0.0.2",
     "gulp-imagemin": "^3.0.3",
     "gulp-notify": "^2.2.0",
     "gulp-responsive": "^2.5.1",

@@ -6,6 +6,8 @@ var
     browserSync = require("browser-sync").create();
     browserify = require('browserify');
     tap = require('gulp-tap');
+    htmlImport = require('gulp-html-import');
+    htmlmin = require("gulp-htmlmin");
     buffer = require('gulp-buffer');
     uglify = require('gulp-uglify');
     sourcemaps = require('gulp-sourcemaps');
@@ -88,6 +90,17 @@ gulp.task('fonts', function() {
         }));
 });
 
+
+// copiar e importar html
+gulp.task("html", function(){
+    gulp.src("src/*.html")
+        .pipe(htmlImport("src/components/")) // reemplaza los @import de los HTML
+        .pipe(htmlmin({collapseWhitespace: true})) // minifica el HTML
+        .pipe(gulp.dest("dist/"))
+        .pipe(browserSync.stream())
+        .pipe(notify("HTML importado"));
+});
+
 // compile scss
 gulp.task('sass', function() {
     return gulp.src(scss.in)
@@ -141,17 +154,17 @@ gulp.task('imagemin', function() {
 
 
 // default task
-gulp.task("default", ["js", "sass", "fonts", "responsive", "imagemin"], function() {
+gulp.task("default", ["html","js", "sass", "fonts", "responsive", "imagemin"], function() {
 
-    // iniciar BrowserSync
    // iniciar BrowserSync
    browserSync.init({
     server: "./", // levanta servidor web en carpeta actual
     //proxy: "", // actúa como proxy enviando las peticiones a sparrest
-    browser: "google chrome"
+    browser:"google chrome"
 });
        // observa cambios en los archivos SASS, y entonces ejecuta la tarea 'sass'
         gulp.watch(["src/scss/*.scss", "src/scss/**/*.scss"], ["sass"]);
+        gulp.watch(["src/*.html", "src/**/*.html"], ["html"]);
        // observa cambios en los archivos HTML y entonces recarga el navegador
         gulp.watch("src/*.html", function(){
             browserSync.reload();

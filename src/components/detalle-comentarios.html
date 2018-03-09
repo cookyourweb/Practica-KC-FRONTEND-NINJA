@@ -1,0 +1,73 @@
+<section class="comentarios loading" id="comentarios">
+
+    <div class="ui-status loading mostrar">
+        <i class="fa fa-spinner fa-pulse fa-3x fa-fw" aria-hidden="true"></i>
+        <br>
+        Cargando... 
+    </div>
+
+    <div class="ui-status error mostrar">
+        <h3 class="error">Se ha producido un Error al cargar los comentários</h3>
+    </div>
+    
+     <div class="ui-status empty">
+        
+        <div class="cabecera-comentarios">
+            <h3>Deja tu mensaje:</h3>
+        </div>
+        
+        <div class="mostrar">
+            <h3>No existen comentários, se el primero en añadir uno!!!!</h3>
+        </div>
+
+    </div> 
+
+    <div class="ui-status ideal">
+       
+        <div class="cabecera-comentarios" id="cabecera-comentarios">
+            <h3>Deja tu mensaje:</h3>
+        </div>
+
+        <div class="coments" id="coments"></div>
+        
+    </div>
+
+    <form novalidate id="comentarios-form" class="comentarios-form">
+
+        <div class="ui-status empty ideal">
+            <div class="contenedor">
+
+                <div class="agrupacion-inputs">
+                    <label for="nombre-form">*Nombre:</label>
+                    <input type="text" name="nombre-form" id="nombre-form" placeholder="Nombre" required>
+                    
+                    <label for="apellidos-form">Apellidos: </label>
+                    <input type="text" name="apellidos-form" placeholder="Apellidos" id="apellidos-form">    
+                    
+                    <label for="email-form">*E-mail: </label>
+                    <input type="email" name="email-form" placeholder="E-mail" id="email-form" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+                </div>
+                <div class="agrupacion-inputs">
+                    <label for="comentario-form">*Comentario: </label>
+                    <textarea id="comentario-form" placeholder="Escribe máximo 120 palabras" class="comentario-form" name="comentario-form" pattern="" required></textarea>
+                </div>
+                <div class="agrupacion-inputs">
+
+                    <div class="ui-status error"><span>Error al enviar</span></div>
+
+                    <div class="ui-status loading"> 
+                        <i class="fa fa-spinner fa-pulse fa-2x fa-fw" aria-hidden="true"></i>
+                        <span>Enviando...</span>
+                    </div>
+
+                    <!-- <button id="enviarComentario" class="boton-form">Enviar comentario</button> -->
+                    <input type="submit" class="boton-form espaciado" id="enviarComentario" value="Enviar comentario">
+                    <small class="comentario-form">Los campos marcados con * son obligatorios</small>
+                </div>
+
+            </div>
+
+        </div>
+    </form>
+
+</section>
