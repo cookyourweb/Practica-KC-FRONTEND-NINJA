@@ -5,10 +5,6 @@ var
     notify = require("gulp-notify");
     browserSync = require("browser-sync").create();
     gulpImport = require("gulp-html-import");
-
-
-
-
     tap = require("gulp-tap");
     browserify = require("browserify"); 
     htmlmin = require("gulp-htmlmin");
