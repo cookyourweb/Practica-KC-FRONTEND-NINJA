@@ -36,7 +36,7 @@ var bootstrapSass = { in : './node_modules/bootstrap-sass/' },
     };
 
 // sass config
-var scss = { in : source + 'scss/style.scss',
+var scss = { in : source + 'scss/main.scss',
     out: dest + 'css/',
     watch: source + 'scss/**/*',
     sourcemaps: './',

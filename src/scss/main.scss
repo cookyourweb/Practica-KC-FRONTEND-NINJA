@@ -1,5 +1,15 @@
-@import "override-variables";
+/* style.scss */
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Patua+One|Slabo+27px';
 
+@import "variables";
 
-@import "bootstrap"; // @import "bootstrap-custom";
-@import "bootstrap/theme";
+@import "bootstrap";
+@import "font-awesome";
+@import "html-tags";
+@import "utils";
+@import "header";
+@import "pagination";
+@import "footer";
+@import "articles";
+@import "comments";
+

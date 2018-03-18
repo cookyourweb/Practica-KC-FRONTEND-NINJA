@@ -1,34 +1,30 @@
-const $ = require("jquery");
+var $ = require('jquery');
 
-export default class CommentsService {
+module.exports = {
 
-    constructor(url) {
-        this.url = url;
-    }
+    list: function(){
+        var deferred = $.Deferred();
 
-    // Obtener listado de comentarios
-    list(successCallback, errorCallback) {
-        $.ajax({
-            url: this.url,
-            success: successCallback,
-            error: errorCallback
+        $.getJSON('/api/comments/').done(function(data){
+            deferred.resolve(data);
+        }).fail(function(error){
+            deferred.reject(error);
         });
-    }
-    // Crear o actualizar canción
-    save(comment, successCallback, errorCallback) {     
-        console.log("Prueba");
-        this.create(comment, successCallback, errorCallback);
+
+        return deferred;
+    },
+
+    create: function(comment){
+        var deferred = $.Deferred();
+        var data = comment;
+
+        $.post('/api/comments/', data).done(function(data){
+            deferred.resolve(data);
+        }).fail(function(error){
+            deferred.reject(error);
+        });
+
+        return deferred;
     }
 
-    // Crear un commentario
-    create(comment, successCallback, errorCallback) {
-        console.log("Hey");
-        $.ajax({
-            url: this.url,
-            method: "post",
-            data: comment,
-            success: successCallback,
-            error: errorCallback
-        })
-    }
-}
+};

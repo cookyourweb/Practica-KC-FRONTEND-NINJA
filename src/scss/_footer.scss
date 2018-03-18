@@ -1,0 +1,11 @@
+.page-footer {
+    padding: 25px 0;
+    background: $page-footer-bg-color;
+    color: $page-footer-text-color;
+
+    .btn {
+        background-color: $sunset-orange;
+        border-color: $sunset-orange;
+        color: $page-footer-text-color;
+    }
+}

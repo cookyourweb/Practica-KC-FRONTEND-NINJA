@@ -1,0 +1,44 @@
+// Fonts
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-family-serif: 'Slabo 27px', serif;
+$font-family-titles: 'Patua One', cursive;
+
+// Bootstrap font family vars
+$font-family-base: $font-family-sans-serif;
+
+// Colors
+$dark-liver: #50514F;
+$sunset-orange: #F25F5C;
+$mustard: #FFE066;
+$lapis-lazuli: #247BA0;
+$green-sheen: #70C1B3;
+$white: #FFFFFF;
+
+// Color uses
+$color-titles: $dark-liver;
+
+// Bootstrap color vars
+$gray-base: $lapis-lazuli;
+$gray-lighter: lighten($gray-base, 65%);
+$brand-primary: $lapis-lazuli;
+
+
+// Navbar
+$navbar-default-brand-color: $lapis-lazuli;
+$navbar-default-link-hover-color: $lapis-lazuli;
+$navbar-default-link-active-color: $lapis-lazuli;
+
+// Links
+$link-color: $lapis-lazuli;
+$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;
+
+// Transitions
+$transition-speed-fast: 0.25s;
+$transition-speed-medium: 0.25s;
+$transition-speed-slow: 0.25s;
+$transition-default-time: $transition-speed-fast;
+
+// Footer
+$page-footer-bg-color: $dark-liver;
+$page-footer-text-color: $white;
