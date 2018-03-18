@@ -5,6 +5,9 @@
 *Verónica Serna*  
 <verserper@gmail.com>
 ***
+## Configuarción
+$ npm install
+$ mkdir -p dist/img/avatars dist/img/contents dist/css dist/js dist/fonts
 
 ## Enunciado
  

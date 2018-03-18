@@ -1,0 +1,8 @@
+node_modules
+# dist
+dist/
+
+# SparREST stuff
+db/
+uploads
+server.py
